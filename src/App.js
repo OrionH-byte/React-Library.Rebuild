@@ -48,14 +48,6 @@ function App() {
     setCart((oldCart) => oldCart.filter((cartItem) => cartItem.id !== item.id));
   }
 
-  function numberOfItems() {
-    let counter = 0;
-    cart.forEach((item) => {
-      counter += +item.quantity;
-    });
-    return counter;
-  }
-
   function getNumberOfItems() {
     let counter = 0;
     cart.forEach((item) => {
