@@ -79,7 +79,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Nav numberOfItems={getNmberOfItems()} />
+        <Nav numberOfItems={getNumberOfItems()} />
         <Routes>
           <Route path="/" element={<Home books={books} />} />
           <Route path="/books" element={<Books books={books} />} />
